@@ -1,0 +1,15 @@
+Below is the implementation for the Brand Guide presentation for the fictional brand **Creatiwise** as a 5-slide Figma-inspired design, coded as a single-page React application with Tailwind CSS to simulate the Figma layout. This approach ensures the design is runnable in a browser for immediate preview, while the structure and styling can be directly translated into a Figma file. Additionally, I’ve included a markdown documentation file to describe the design, Figma-specific setup, and guidelines for submission.
+
+**Key Notes**:
+- **Brand Identity**: Creatiwise is a modern, creative agency with a vibrant, approachable aesthetic.
+- **Colors**: Primary (#2A4D69, Navy Blue), Secondary (#F5A623, Warm Yellow), Accent (#E8ECEF, Light Gray).
+- **Typography**: Inter (Google Fonts) for clean, professional text.
+- **Figma Translation**: The code uses Auto Layout-like principles (flexbox, Tailwind utilities) and reusable components to mirror Figma’s structure.
+- **Setup**: Run locally with a simple HTML file or use a tool like Vite. Import into Figma using a plugin like “HTML to Figma” or manually recreate frames.
+- **Submission**: The documentation provides steps to create the Figma file from this code.
+
+**Setup Instructions**:
+1. Create a project directory and save the code as `index.html`.
+2. Install Tailwind CSS via CDN (already included) or locally with `npm install tailwindcss`.
+3. Run using a local server (e.g., `npx vite` or Live Server in VS Code).
+4. For Figma, import the rendered design or manually recreate frames, components, and styles based on the code and documentation.
