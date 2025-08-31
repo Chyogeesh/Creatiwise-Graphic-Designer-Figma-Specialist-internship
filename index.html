@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creatiwise Brand Guide</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .slide { min-height: 100vh; width: 100%; max-width: 1280px; margin: 0 auto; }
+    .glow-effect { box-shadow: 0 0 15px rgba(245, 166, 35, 0.2); }
+    .hover-scale { transition: transform 0.3s; }
+    .hover-scale:hover { transform: scale(1.02); }
+  </style>
+</head>
+<body className="bg-[#E8ECEF]">
+  <div id="root"></div>
+  <script type="text/babel">
+    // Slide 1: Cover
+    const CoverSlide = () => (
+      <section className="slide flex flex-col items-center justify-center bg-[#2A4D69] text-white p-8">
+        <h1 className="text-5xl font-bold mb-4">Creatiwise</h1>
+        <p className="text-2xl font-light mb-6">Unleashing Creativity, Shaping Futures</p>
+        <img src="https://via.placeholder.com/600x400?text=Creatiwise+Hero+Graphic" alt="Hero Graphic" className="rounded-lg glow-effect hover-scale" />
+      </section>
+    );
+
+    // Slide 2: Logo Usage
+    const LogoSlide = () => (
+      <section className="slide flex flex-col p-8 bg-[#E8ECEF]">
+        <h2 className="text-3xl font-bold text-[#2A4D69] mb-6">Logo Usage</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h3 className="text-xl font-semibold text-[#2A4D69] mb-2">Primary Logo</h3>
+            <img src="https://via.placeholder.com/200x100?text=Primary+Logo" alt="Primary Logo" className="mb-2" />
+            <p className="text-[#2A4D69]">Use on light backgrounds.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-[#2A4D69] mb-2">Secondary Logo</h3>
+            <img src="https://via.placeholder.com/200x100?text=Secondary+Logo" alt="Secondary Logo" className="mb-2" />
+            <p className="text-[#2A4D69]">Use on dark backgrounds.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-[#2A4D69] mb-2">Incorrect Usage</h3>
+            <img src="https://via.placeholder.com/200x100?text=Distorted+Logo" alt="Incorrect Logo" className="mb-2 opacity-50" />
+            <p className="text-[#2A4D69]">Avoid stretching or altering colors.</p>
+          </div>
+        </div>
+        <p className="mt-6 text-[#2A4D69]">Maintain 20px clear space around the logo.</p>
+      </section>
+    );
+
+    // Slide 3: Color Palette
+    const ColorSlide = () => (
+      <section className="slide flex flex-col p-8 bg-[#F5A623]">
+        <h2 className="text-3xl font-bold text-[#2A4D69] mb-6">Color Palette</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <div className="w-24 h-24 bg-[#2A4D69] rounded-lg glow-effect mb-2"></div>
+            <p className="text-[#2A4D69]">Primary: #2A4D69 (RGB: 42, 77, 105)</p>
+          </div>
+          <div>
+            <div className="w-24 h-24 bg-[#F5A623] rounded-lg glow-effect mb-2"></div>
+            <p className="text-[#2A4D69]">Secondary: #F5A623 (RGB: 245, 166, 35)</p>
+          </div>
+          <div>
+            <div className="w-24 h-24 bg-[#E8ECEF] rounded-lg glow-effect mb-2"></div>
+            <p className="text-[#2A4D69]">Accent: #E8ECEF (RGB: 232, 236, 239)</p>
+          </div>
+        </div>
+      </section>
+    );
+
+    // Slide 4: Typography
+    const TypographySlide = () => (
+      <section className="slide flex flex-col p-8 bg-[#E8ECEF]">
+        <h2 className="text-3xl font-bold text-[#2A4D69] mb-6">Typography</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-4xl font-bold text-[#2A4D69]">Heading (Inter Bold, 36px)</h3>
+            <p className="text-[#2A4D69]">Used for slide titles and hero text.</p>
+          </div>
+          <div>
+            <h3 className="text-2xl font-semibold text-[#2A4D69]">Subheading (Inter SemiBold, 24px)</h3>
+            <p className="text-[#2A4D69]">Used for section headers.</p>
+          </div>
+          <div>
+            <p className="text-base font-light text-[#2A4D69]">Body Text (Inter Regular, 16px)</p>
+            <p className="text-[#2A4D69]">Used for descriptions and general content.</p>
+          </div>
+        </div>
+      </section>
+    );
+
+    // Slide 5: Imagery & Applications
+    const ImagerySlide = () => (
+      <section className="slide flex flex-col p-8 bg-[#2A4D69] text-white">
+        <h2 className="text-3xl font-bold mb-6">Imagery & Brand Applications</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Imagery Style</h3>
+            <img src="https://via.placeholder.com/200x150?text=Creative+Image" alt="Imagery" className="mb-2 glow-effect" />
+            <p>Use vibrant, high-resolution images with a modern aesthetic.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Social Post</h3>
+            <img src="https://via.placeholder.com/200x200?text=Social+Post" alt="Social Post" className="mb-2 glow-effect" />
+            <p>Apply brand colors and logo consistently.</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Business Card</h3>
+            <img src="https://via.placeholder.com/200x100?text=Business+Card" alt="Business Card" className="mb-2 glow-effect" />
+            <p>Use primary logo and typography styles.</p>
+          </div>
+        </div>
+      </section>
+    );
+
+    const App = () => (
+      <div>
+        <CoverSlide />
+        <LogoSlide />
+        <ColorSlide />
+        <TypographySlide />
+        <ImagerySlide />
+      </div>
+    );
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
