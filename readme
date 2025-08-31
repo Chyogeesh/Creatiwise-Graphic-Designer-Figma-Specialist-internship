@@ -13,3 +13,10 @@ Below is the implementation for the Brand Guide presentation for the fictional b
 2. Install Tailwind CSS via CDN (already included) or locally with `npm install tailwindcss`.
 3. Run using a local server (e.g., `npx vite` or Live Server in VS Code).
 4. For Figma, import the rendered design or manually recreate frames, components, and styles based on the code and documentation.
+**Submission Instructions**:
+1. Run `index.html` locally to preview the design.
+2. Import into Figma using a plugin or manually recreate frames, components, and styles as described in the documentation.
+3. Save the `brand_guide_documentation.md` file for reference.
+4. Share the Figma file link with edit access within 48 hours.
+
+This Brand Guide presentation for Creatiwise showcases a modern, creative aesthetic while demonstrating proficiency in Figma’s tools and best practices. Let me know if you need further refinements or assistance with Figma setup!
